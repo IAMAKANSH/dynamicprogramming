@@ -1,8 +1,8 @@
 public class ClimbStairsWithMinimumMoves {
 
     public static void main(String[] args) {
-        int n=13;
-        int[] steps={5,5,2,4,1,5,9,8,6,3,8,9,1};
+        int n=10;
+        int[] steps={2,3,1,1,2,4,2,0,1,1};
         Integer[] dp=new Integer[n+1];
         dp[n]=0;
         for (int i=n-1;i>=0;i--) {
@@ -20,5 +20,6 @@ public class ClimbStairsWithMinimumMoves {
              }
 
         }
+        System.out.println(dp[0]);
     }
 }
